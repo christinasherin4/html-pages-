@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title> website</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    
+    <div class="container">
+      <header id="navbar">
+       <a href="#" class="logo">BookStore</a>
+       <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="newarrivals.html">NewArrivals</a></li>
+          <li><a href="bookshelf.html">Bookshelf</a></li>
+          <li><a href="https://cscakshops.000webhostapp.com/exp40/singup.html">SignUp</a></li>
+       </ul>
+      </header>
+      <div class="content">
+          <div class="bannerText">
+            <div class="active">
+              <h2>Available Books</h2>
+              <p>Classic,fiction,Mystery,Novels,Children books ,phycological and philosophical books are available here.</p> 
+            </div>
+             <div>
+              <h2>Children Books</h2>
+              <p>Moral stories,Fairy tales and Aesop Fables,Harry Potter</p> 
+            </div>
+             <div>
+              <h2>Mystery Books</h2>
+              <p>Deductive novels,Sherlock Holmes,Agatha Christie,Famous five.</p> 
+            </div>
+             <div>
+              <h2>Fiction Books</h2>
+              <p>Jane Eyre,HuckelBerry Finn,Tom Sawyer,Lord of the Rings,Private Vegas,Dan Brown,The Secret,The Secret Garden,Charles Dickens.</p> 
+            </div>
+            <div>
+            <h2>Physcological Books</h2>
+              <p>Napolean hill books,Readers Digest,Life 3.0,Emotional Intelligence,Daniel Goleman Books.</p> 
+            </div>
+          </div>
+      </div>
+    
+     </div>
+  </section>
+  <div class="bannerVideo"  id="slideshow" class="active"></div>
+      <video src="sh.mp4" autoplay muted loop></video>
+      <video src="cd.mp4" autoplay muted loop></video>
+      <video src="lor.mp4" autoplay muted loop></video>
+      <video src="sh.mp4" autoplay muted loop></video>
+    </div>
+  <script>
+    const slideShow = document.getElementById('slideshow');
+    const slides = slideShow.getElementByTagName('video');
+    var index=0;
+    function nextslide(){
+    	slides[index].classList.remove('active');
+    	index=(index+1)%slides.length;
+    	slides[index].classList.add('active');
+    }
+     function prevslide(){
+    	slides[index].classList.remove('active');
+    	index=(index-1+slide.length)%slides.length;
+    	slides[index].classList.add('active');
+    }
+   </script>
+</body>
+</html>
